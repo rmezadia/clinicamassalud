@@ -1,0 +1,214 @@
+<!--Pawina web +SALUD Diseño Web en HTML5-->
+<!--Autor: Ricardo Meza Díaz 2020-->
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+<link rel="stylesheet" type="text/css" href="CSS/citaprevia.css">
+
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+
+<!-----------------------------Encabezado-------------------------------->
+<head><title>+SALUD Tu salud</title></head>
+<style>
+ #div2 {
+ 	float: left;
+  	width: 160px;
+  	height: 160px;
+  	margin: 10px;
+  	padding: 10px;
+  	border: 1px solid black;
+}
+#div1{
+
+	float: left;
+	margin: 10px;
+  	padding: 10px;
+
+}
+footer{
+	float: left;
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+</style>
+<body>
+
+	<!-----------------------------Script para conectar logica Javascript y para el Drag and drop------------------->
+	<script>
+
+
+		function allowDrop(ev) {
+ 			 ev.preventDefault();
+		}
+
+		function drag(ev) {
+ 			 ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+ 			 ev.preventDefault();
+  			var data = ev.dataTransfer.getData("text");
+  			ev.target.appendChild(document.getElementById(data));
+		}
+
+	</script>
+
+	<!---------------------------------Header----------------------------------------------->
+	<header>
+
+	<title>Bienvenido a +SALUD</title>
+
+	</header>
+	<hr>
+	<!---------------------------------Header----------------------------------------------->
+	<div>
+		<a href="index.html" target="blank"><img src="logos/icono.png" width="200px" height="200px"></a>
+	</div>
+	<hr>
+
+<!---------------------------------Barra navegación----------------------------------->
+	<section class="wrapper">
+		<nav>
+			<ul>
+				<li><a id="letraNav" href="index.html">Inicio</a></li>
+				<li><a id="letraNav" href="solicitudespcr.html">Solicitudes PCR</a></li>
+				<li><a id="letraNav" href="citaprevia.html">Cita Previa</a></li>
+            	<li><a id="letraNav" href="precios.html">Precios</a></li>
+            	<li><a id="letraNav" href="clinicas.html">Nuestras clínicas</a></li>
+            	<li><a id="letraNav" href="sobrenosotros.html">Sobre nosotros</a></li>
+            	<li><a id="letraNav" href="contactanos.html">Contacto</a></li>
+            	
+
+			</ul>
+
+			<ul>
+				<li><a href="registro.html" style="float: right" class="nav navbar-nav navbar-right">Registrarse</a></li>
+            	<li><a href="login.html" style="color: blue; float: right">Log in</a></li>
+			</ul>
+    	</nav>
+
+	</section>
+
+
+
+	<hr>
+
+<!---------------------------------Barra navegación----------------------------------->
+
+
+<!---------------Contenedores de section(pueden ser tambien varios div---------------->
+	<h2>SOLICITUDES PCR</h2>
+	<br>
+	<br>
+	<br>
+
+<!---------------------------------Drag and drop----------------------------------->
+	<section>
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente2.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente3.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente4.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente5.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente5.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente6.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente7.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente8.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ 	 <img src="imagenes/paciente9.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="130">
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 1</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 2</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 3</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 4</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 5</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 6</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 7</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 8</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 9</label>
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<label>SALA 10</label>
+	</div>
+
+	</section>
+
+	<!-----------------------------Footer-------------------------------->
+
+	<br>
+	<footer>
+		<hr>
+		<br>
+		<br>
+		<ul style="text-align: center;">
+			<a href="contactanos.html">Contactar</a>
+			<a href="https://www.privacypolicies.com/live/c3708488-9c05-45cb-bf44-90bf7af80f96">Política de privacidad</a>
+			<a href="clinicas.html">Clínicas +SALUD</a>
+		
+		</ul>
+	<!-----------------------------Foooter-------------------------------->
+	</footer>
+</body>
+<!-----------------------------Cuerpo-------------------------------->	
+
+</html>

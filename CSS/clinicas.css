@@ -1,0 +1,161 @@
+a:hover {
+  color: black;
+}
+
+#letraNav{
+  font-size: 18px;
+}
+.cuerpoTextos{
+  display: flex;
+  width: 85%
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  
+
+}
+a:hover {
+  color: black;
+}
+body{
+  background: lightblue;
+  width: auto;
+  height: auto;
+ 
+}
+div{
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h1{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 35px;
+      
+}
+h2{
+  text-align: left;
+  padding-bottom: 30px;
+  font-size: 25px;
+  padding-top: 50px;
+}
+
+.bar{
+  background-size: 25px 50px;
+  background-size: 50% 50%;
+}
+
+#texto {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+   padding-right:20px;
+  padding-left: 20px;
+}
+
+/*Nuevo*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: Verdana;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+header {
+  background: white;
+  width: 100%;
+  /*position: fixed;*/
+  z-index: 10;
+}
+footer{
+      padding-bottom: 5px;
+      align-content: bottom;
+      margin-top:50px;
+      width:100%;
+      height: 81px;
+      /*position: absolute;*/
+      bottom: 0;
+      left: 0;
+     
+}
+section{
+  margin-right: 25px;
+  padding-top: 40px;
+
+}
+ul{
+   padding-bottom: 1px;
+   padding-top: 60px;
+}
+/**Elementos que afectrán a la barra de mavegación**/
+nav {
+  /* Desplaza nav a la izquierda */
+  float: left; 
+  padding-bottom: 2px;
+  font-size: 18px;
+}
+nav ul {
+  list-style: none;
+  /* Controla errores del float */
+  overflow: hidden; 
+}
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  /* Para controlar el padding convirte etiqueta a en un bloque de elemento*/
+  display: block; 
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: lightgreen;
+}
+.contenido {
+  padding-top: 20px;
+}
+
+/**Para hacer responsives las cajas de texto del formulario*/
+.flex-container {
+  width: auto;
+  height: auto;    
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+input {
+  width: 98%;
+ height: 40px;
+ font: 300 24px "Open Sans", Arial, sans-serif;
+ margin: 5px 0 10px 0;
+}
+textarea{
+  width: 98%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+iframe{
+  width: auto;
+  height: auto;
+  padding-bottom: 35px;
+}
+
+

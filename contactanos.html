@@ -1,0 +1,114 @@
+<!--Pawina web +SALUD Diseño Web en HTML5-->
+<!--Autor: Ricardo Meza Díaz 2020-->
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+<link rel="stylesheet" type="text/css" href="CSS/contactanos.css">
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+
+<meta charset="utf-8">
+
+<!-----------------------------Encabezado-------------------------------->
+<head><title>+SALUD Tu salud</title></head>
+
+
+
+<!---------------------------------Body----------------------------------------------->
+
+<body background="Foto portada1.png">
+
+	<!-----------------------------Script para conectar logica Javascript------------------->
+	<script src="registro.js"></script>
+
+	<!---------------------------------Header----------------------------------------------->
+	<header>
+
+	<title>Bienvenido a +SALUD</title>
+
+	<div>
+		<a href="index.html" target="blank"><img src="logos/icono.png" width="200px" height="200px"></a>
+	</div>
+	<hr>
+	
+	</header>
+	<hr>
+	<!---------------------------------Header----------------------------------------------->
+	<hr>
+	<section class="wrapper">
+		<nav>
+			<ul>
+				<li><a id="letraNav" href="index.html">Inicio</a></li>
+        		<li><a id="letraNav" href="solicitudespcr.html">Solicitudes PCR</a></li>
+        		<li><a id="letraNav" href="citaprevia.html">Cita Previa</a></li>
+       		 	<li><a id="letraNav" href="precios.html">Precios</a></li>
+       			<li><a id="letraNav" href="clinicas.html">Nuestras clínicas</a></li>
+      	 		<li><a id="letraNav" href="sobrenosotros.html">Sobre nosotros</a></li>
+        		<li><a id="letraNav" href="contactanos.html">Contacto</a></li>
+            	
+			</ul>
+
+			<ul>
+				<li><a href="registro.html" style="float: right" class="nav navbar-nav navbar-right">Registrarse</a></li>
+            	<li><a href="login.html" style="color: blue; float: right">Log in</a></li>
+			</ul>
+    	</nav>
+
+	</section>
+	<hr>
+
+<!---------------------------------Barra navegación----------------------------------->
+
+
+<!---------------Contenedores de section(pueden ser tambien varios div---------------->
+	
+	<h2>FORMULARIO DE CONTACTO:</h2>
+	<section class="flex-container" style="margin-left: 25px; margin-right: 25px;">
+		<br>
+		<br>
+		<form  action="https://www.w3schools.com/action_page.php" method="POST">
+		<label>Nombre:</label>
+		<input maxlength="50" name="nombre" required size="50" type="text" autofocus placeholder="Escribe tu nombre" />
+		<br>
+		<br>
+		<hr>
+		<br>
+		<label>Email:</label>
+		<input name="email" required type="email" placeholder="Escribe tu email" />
+		<br>
+		<br>
+		<hr>
+		<br>
+		<label>Asunto:</label>
+		<input maxlength="100" name="nombre" required size="100" type="text" autofocus placeholder="Escribe tu nombre"/>
+		<br>
+		<br>
+		<textarea  cols="80" name="observaciones" rows="8">Puede escribir aquí sus observaciones...</textarea>
+		<br>
+		<br>
+		<input type="submit" value="Enviar" />
+		</form>
+	</section>
+
+	<!-----------------------------Footer-------------------------------->
+
+
+	<footer>
+		<ul style="text-align: center;">
+			<a href="contactanos.html">Contactar</a>
+			<a href="https://www.privacypolicies.com/live/c3708488-9c05-45cb-bf44-90bf7af80f96">Política de privacidad</a>
+			<a href="clinicas.html">Clínicas +SALUD</a>
+		
+		</ul>
+	<!-----------------------------Foooter-------------------------------->
+	</footer>
+	<br>
+</body>
+<!-----------------------------Cuerpo-------------------------------->	
+
+</html>

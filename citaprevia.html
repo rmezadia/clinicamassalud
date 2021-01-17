@@ -1,0 +1,178 @@
+<!--Pawina web +SALUD Diseño Web en HTML5-->
+<!--Autor: Ricardo Meza Díaz 2020-->
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+<link rel="stylesheet" type="text/css" href="CSS/citaprevia.css">
+
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+
+<!-----------------------------Encabezado-------------------------------->
+<head><title>+SALUD Tu salud</title></head>
+
+<!-----------------------------Script para conectar logica Javascript------------------->
+	
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+	 <script>
+
+ /*Funcion de Capturar, Almacenar datos y Limpiar campos*/
+$(document).ready(function(){    
+    $('#boton-guardar').click(function(){        
+        
+        /*Captura de datos escrito en los inputs*/        
+        var nom = document.getElementById("nome").value;
+        var tipoCita = document.getElementById("cita").value;
+        var dni = document.getElementById("doc").value;
+        var fecha = document.getElementById("fec").value;
+        var hora = document.getElementById("ho").value;
+       
+        /*Guardando los datos en el LocalStorage*/
+        localStorage.setItem("Nombre", nom);
+        localStorage.setItem("Tipo Cita", tipoCita);
+        localStorage.setItem("Dni", dni);
+        localStorage.setItem("Fecha", fecha);
+        localStorage.setItem("Hora", hora);
+
+        /*Limpiando los campos o inputs*/
+        document.getElementById("nome").value = "";
+        document.getElementById("cita").value = "";
+        document.getElementById("doc").value = "";
+        document.getElementById("fec").value = "";
+        document.getElementById("ho").value = "";
+        
+    });   
+});
+
+/*Funcion Cargar y Mostrar datos*/
+$(document).ready(function(){    
+    $('#boton-cargar').click(function(){                       
+        
+        /*Obtener datos almacenados*/
+        var nom = localStorage.getItem("Nombre");
+        var tipoCita = localStorage.getItem("Tipo Cita");
+        var dni = localStorage.getItem("Dni");
+        var fecha = localStorage.getItem("Fecha");
+        var hora = localStorage.getItem("Hora");
+       
+        /*Mostrar datos almacenados*/      
+        document.getElementById("nom").innerHTML = nom;
+        document.getElementById("tipoCita").innerHTML = tipoCita; 
+        document.getElementById("dni").innerHTML = dni; 
+        document.getElementById("fecha").innerHTML = fecha; 
+        document.getElementById("hora").innerHTML = hora; 
+    });   
+});
+
+</script>
+
+<body>
+
+	
+
+	<!---------------------------------Header----------------------------------------------->
+	<header>
+
+	<title>Bienvenido a +SALUD</title>
+
+	</header>
+	<hr>
+	<!---------------------------------Header----------------------------------------------->
+	<div>
+		<a href="index.html" target="blank"><img src="logos/icono.png" width="200px" height="200px"></a>
+	</div>
+	<hr>
+
+<!---------------------------------Barra navegación----------------------------------->
+	<section class="wrapper">
+		<nav>
+			<ul>
+				<li><a id="letraNav" href="index.html">Inicio</a></li>
+				<li><a id="letraNav" href="solicitudespcr.html">Solicitudes PCR</a></li>
+				<li><a id="letraNav" href="citaprevia.html">Cita Previa</a></li>
+            	<li><a id="letraNav" href="precios.html">Precios</a></li>
+            	<li><a id="letraNav" href="clinicas.html">Nuestras clínicas</a></li>
+            	<li><a id="letraNav" href="sobrenosotros.html">Sobre nosotros</a></li>
+            	<li><a id="letraNav" href="contactanos.html">Contacto</a></li>
+            	
+
+			</ul>
+
+			<ul>
+				<li><a href="registro.html" style="float: right" class="nav navbar-nav navbar-right">Registrarse</a></li>
+            	<li><a href="login.html" style="color: blue; float: right">Log in</a></li>
+			</ul>
+    	</nav>
+
+	</section>
+	<hr>
+
+<!---------------------------------Barra navegación----------------------------------->
+
+
+</head>
+        
+<center><h1>Solicitar cita</h1>
+<center><h3>+ SALUD</h3><br><br>
+
+<input type="text" placeholder="Nombre" id="nome" > <br><br>
+<input type="text" placeholder="Tipo de Cita" id="cita" > <br><br>    
+<input type="text" placeholder="DNI / Pasaporte" id="doc"><br><br>
+<input type="text" placeholder="Fecha de cita  dd/mm/aa" id="fec" > <br><br>    
+<input type="text" placeholder="Hora de  xx:xx PM/AM" id="ho"><br><br>
+
+<button id="boton-guardar">Solicitar</button><br><br>
+           
+<hr />
+<br>
+Nombre:
+<label type="text" id="nom"></label><br><br>                          
+
+Tipo Cita:
+<label type="text" id="tipoCita"></label><br><br>
+
+Dni:
+<label type="text" id="dni"></label><br><br>
+
+Fecha:
+<label type="text" id="fecha"></label><br><br>
+
+Hora: 
+<label type="text" id="hora"></label><br><br>
+
+<button id="boton-cargar">
+Verfificar datos
+</button>
+<br>
+<br>
+</center>
+
+<hr />
+</section>
+
+
+
+
+	<!-----------------------------Footer-------------------------------->
+
+	<br>
+	<footer>
+		<ul style="text-align: center;">
+			<a href="contactanos.html">Contactar</a>
+			<a href="https://www.privacypolicies.com/live/c3708488-9c05-45cb-bf44-90bf7af80f96">Política de privacidad</a>
+			<a href="clinicas.html">Clínicas +SALUD</a>
+		
+		</ul>
+	<!-----------------------------Foooter-------------------------------->
+	</footer>
+</body>
+<!-----------------------------Cuerpo-------------------------------->	
+
+</html>
